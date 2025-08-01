@@ -12,4 +12,4 @@ def index():
     else:
         return str(f"Our counter is: {counter} ")
 if __name__ == '__main__':
-    app.run(debug=True,port=443,host='0.0.0.0', ssl_context='adhoc')
+    app.run(ssl_context='adhoc',debug=True,port=443,host='0.0.0.0')
