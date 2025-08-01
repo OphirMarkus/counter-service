@@ -6,8 +6,9 @@ counter = 0
 @app.route('/', methods=["POST", "GET"])
 def index():
     global counter
+    counter+=1
     if request.method == "POST":
-        counter+=1
+        # counter+=1
         return "Hmm, Plus 1 please "
     else:
         return str(f"Our counter is: {counter} ")
